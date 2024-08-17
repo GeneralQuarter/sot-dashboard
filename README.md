@@ -86,27 +86,19 @@ npm run dev
 npm run install
 ```
 
-2. Environment variables
-
-Create a `.env.production` file at the root of the project containing the following environments variables
-
-```sh
-VITE_API_BASE_URL=https://www.seaofthieves.com
-```
-
-3. Build the extension
+2. Build the extension
 
 ```sh
 npm run build
 ```
 
-4. Load extension
+3. Load extension
 
 Load the `extension` folder as an unpacked extension in Chrome or refresh the extension
 
 ### Package extension
 
-1. Go through the build process up to step 3
+1. Go through the build process up to step 2
 2. Package the extension
 
 ```sh
