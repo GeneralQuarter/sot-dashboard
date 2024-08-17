@@ -1,0 +1,23 @@
+.app-main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: min-content;
+  grid-gap: var(--spacing-l);
+  padding: var(--spacing-l);
+  flex-grow: 1;
+  overflow: auto;
+
+  @media (min-width: 1400px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.status {
+  display: flex;
+  gap: var(--spacing-m);
+  align-items: center;
+
+  &__description {
+    font-size: 10px;
+  }
+}

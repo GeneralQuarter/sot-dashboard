@@ -1,0 +1,73 @@
+.progress {
+  --progress-background-color: var(--faction-background-color, black);
+  --progress-value-color: var(--faction-value-color, white);
+  --progress-height: var(--spacing-m);
+  --progress-gap: var(--spacing-m);
+  --marker-tick-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+
+  &__label {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress {
+    appearance: none;
+    background: var(--progress-background-color);
+    overflow: clip;
+    width: 100%;
+    height: var(--progress-height);
+
+    &::-webkit-progress-bar {
+      background-color: var(--progress-background-color);
+    }
+
+    &::-webkit-progress-value {
+      background-color: var(--progress-value-color);
+    }
+  }
+
+  &__wrapper {
+    padding-inline: calc(var(--marker-tick-size) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--progress-gap);
+  }
+
+  &__markers {
+    position: relative;
+    height: 16px;
+    width: 100%;
+  }
+
+  &__marker {
+    --marker-tick-background-color: var(--progress-background-color);
+  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    inset-inline-start: var(--marker-inset-inline-start);
+    transform: translateX(-50%);
+    font-size: 12px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: var(--marker-tick-size);
+      height: var(--marker-tick-size);
+      background: var(--marker-tick-background-color);
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      inset-block-start: calc(-1 * ((var(--marker-tick-size) / 2) + (var(--progress-height) / 2) + var(--progress-gap)));
+    }
+  }
+
+  &__marker-image {
+    width: var(--spacing-l);
+    height: var(--spacing-l);
+  }
+}

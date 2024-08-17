@@ -1,0 +1,14 @@
+.currency-display {
+  display: flex;
+  gap: var(--spacing-s);
+  align-items: center;
+
+  &__amount {
+    font-size: 14px;
+  }
+
+  &__icon {
+    width: var(--spacing-l);
+    height: var(--spacing-l);
+  }
+}

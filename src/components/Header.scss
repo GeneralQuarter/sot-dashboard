@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  background: var(--body-secondary-background-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-l);
+  gap: var(--spacing-l);
+  flex-wrap: wrap;
+
+  h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .currencies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-l);
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

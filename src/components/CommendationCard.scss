@@ -1,0 +1,42 @@
+.commendation-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-l);
+  gap: var(--spacing-m);
+  background-color: var(--body-background-color-lighter);
+  border-radius: var(--spacing-s);
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-m);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
+
+  &__title {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  &__image {
+    --commendation-card-image-size: 80px;
+
+    width: var(--commendation-card-image-size);
+    height: var(--commendation-card-image-size);
+  }
+
+  &--completed {
+    background-color: var(--body-secondary-background-color);
+  }
+}

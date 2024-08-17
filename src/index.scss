@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "PragRoman";
+  src: url("/fonts/PragRoman.ttf")
+}
+
+:root {
+  font-family: PragRoman, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --font-color: rgba(255, 255, 255, 0.87);
+  --body-background-color: #0A0814;
+  --body-background-color-lighter: #120F22;
+  --body-secondary-background-color: #0A1E23;
+
+  color-scheme: light dark;
+  color: var(--font-color);
+  background-color: var(--body-background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --spacing-s: 4px;
+  --spacing-m: 8px;
+  --spacing-l: 16px;
+  --spacing-xl: 32px;
+}
+
+body {
+  font-family: PragRoman, system-ui, Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,133 @@
+$factions: (
+  "Guilds": (
+    "background-color": #07240F,
+    "value-color": #1b8e7a,
+  ),
+  "OrderOfSouls": (
+    "background-color": #662e37,
+    "value-color": #bfb4c1,
+  ),
+  "GoldHoarders": (
+    "background-color": #5c523a,
+    "value-color": #ab9a2d,
+  ),
+  "MerchantAlliance": (
+    "background-color": #0b5c6e,
+    "value-color": #1395b2,
+  ),
+  "ReapersBones": (
+    "background-color": #63545c,
+    "value-color": #ca3d30,
+  ),
+  "AthenasFortune": (
+    "background-color": #577771,
+    "value-color": #65ffcb,
+  ),
+  "HuntersCall": (
+    "background-color": #506063,
+    "value-color": #99bac2,
+  ),
+  "TallTales": (
+    "background-color": #1d170a,
+    "value-color": #f9dd9f,
+  ),
+  "BilgeRats": (
+    "background-color": #3b2424,
+    "value-color": #f4efd3,
+  ),
+  "PirateLord": (
+    "background-color": #332D4F,
+    "value-color": #8975F8,
+  ),
+  "Flameheart": (
+    "background-color": #565656,
+    "value-color": #FF7F56,
+  )
+);
+
+@mixin applyFactionColors {
+  @each $faction, $properties in $factions {
+    &:has(.#{$faction}) {
+      @each $property, $value in $properties {
+        --faction-#{$property}: #{$value};
+      }
+    }
+  }
+}
+
+.faction-wrapper {
+  display: flex;
+
+  @include applyFactionColors;
+}
+
+.faction {
+  appearance: none;
+  display: flex;
+  gap: var(--spacing-l);
+  padding: var(--spacing-l);
+  border-radius: var(--spacing-s);
+  align-items: center;
+  background: var(--body-background-color-lighter);
+  height: fit-content;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: box-shadow 300ms;
+
+  &__progress-bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-l);
+    flex: 1;
+
+    .progress:first-child:nth-last-child(1) {
+      grid-column: span 2;
+    }
+  }
+
+  &__ledger-levels {
+    display: flex;
+    gap: var(--spacing-l);
+    justify-content: center;
+  } 
+
+  &:hover {
+    box-shadow: 0 0 var(--spacing-m) 0 var(--faction-value-color);
+  }
+}
+
+.faction-progression {
+  --progression-size: 98px;
+
+  width: var(--progression-size);
+  height: var(--progression-size);
+  background-image: var(--progression-image);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+
+  &__level {
+    font-size: 20px;
+  }
+
+  &__guild-icon {
+    --faction-progression-guild-icon-size: 40px;
+
+    width: var(--faction-progression-guild-icon-size);
+    height: var(--faction-progression-guild-icon-size);
+    margin-top: var(--spacing-l);
+
+    & + .faction-progression__level {
+      position: absolute;
+      inset-block-end: 3px;
+      font-size: 12px;
+      color: black;
+    }
+  }
+}
