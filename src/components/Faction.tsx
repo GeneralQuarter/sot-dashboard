@@ -25,10 +25,8 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
   const factionIdOrGuild = useMemo(() => faction.guild ? 'Guilds' : faction.id, [faction.guild, faction.id]);
   const [commendationModalOpen, setCommendationModalOpen] = useState<boolean>(false);
   const distinctionProgressId = useMemo(() => `${faction.id}-distinction-progress`, [faction.id]);
-  const levelProgressId = useMemo(() => `${faction.id}-level-progress`, [faction.id]);
   const commendationProgressId = useMemo(() => `${faction.id}-commendation-progress`, [faction.id]);
   const ledgerProgressId = useMemo(() => `${faction.id}-ledger-progress`, [faction.id]);
-  const ledgerCompletionProgressId = useMemo(() => `${faction.id}-ledger-completion-progress`, [faction.id]);
 
   const className = useMemo(() => `faction ${faction.id}${faction.guild ? ' Guilds' : ''}`, [faction.id, faction.guild]);
   const style = useMemo<FactionProgressionCssProperties>(() => {
@@ -42,30 +40,12 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
   }, [config, faction]);
 
   const distinctionMarkers = useMemo<ProgressMarker[]>(() => {
-    if (faction.guild) {
-      if (!config) {
-        return [];
-      }
-
-      return [
-        {
-          label: '15',
-          value: 15,
-          image: `${config.cdnUrl}${ledgerBandImagePath(factionIdOrGuild, 3)}`
-        },
-        {
-          label: 'I',
-          value: 100,
-        }
-      ]
-    }
-
-    if (faction.maxLevel <= 100 || faction.maxLevel > 500) {
+    if (faction.maxLevel <= 100 || faction.maxLevel > 1000) {
       return [];
     }
 
-    return generateDistinctionMarkers();
-  }, [faction.maxLevel, faction.guild, config, factionIdOrGuild]);
+    return generateDistinctionMarkers(faction.maxLevel);
+  }, [faction.maxLevel]);
 
   const ledgerMax = useMemo(() => {
     return ledger ? Math.max(ledger.bands[0].thresholdScore, ledger.score) : 0;
@@ -78,7 +58,7 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
 
     const m: ProgressMarker[] = ledger.bands.map((band, i) => ({
       value: band.thresholdScore,
-      label: formatNumber(band.thresholdScore),
+      label: `Threshold Score: ${formatNumber(band.thresholdScore)}\nCompleted ${band.level} times out of ${ledger.maxLevel}`,
       image: `${config.cdnUrl}${ledgerBandImagePath(factionIdOrGuild, i)}`
     }));
 
@@ -92,39 +72,17 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
     return m;
   }, [ledger, factionIdOrGuild, config]);
 
-  const ledgerCompletionMakers = useMemo(() => {
-    if (!ledger || !config) {
-      return [];
+  const ledgerDiff = useMemo(() => {
+    if (!ledger) {
+      return '';
     }
 
-    const ms: ProgressMarker[] = [];
-    let currentLevel = 0;
+    const diff = ledger.score - ledger.bands[0].thresholdScore;
 
-    for (let i = 0; i < ledger.bands.length; i++) {
-      const band = ledger.bands[i];
+    return `${diff > 0 ? '+' : '-'}${formatNumber(diff)}`;
+  }, [ledger]);
 
-      if (currentLevel === band.level) {
-        continue;
-      }
-
-      currentLevel = band.level;
-
-      ms.push({
-        label: band.level.toFixed(),
-        value: band.level,
-        image: `${config.cdnUrl}${ledgerBandImagePath(factionIdOrGuild, i)}`
-      });
-    }
-
-    if (currentLevel !== ledger.maxLevel) {
-      ms.push({
-        label: ledger.maxLevel.toFixed(),
-        value: ledger.maxLevel,
-      })
-    }
-
-    return ms;
-  }, [ledger, factionIdOrGuild, config]);
+  const ledgerRank = useMemo(() => `${ledger ? `Rank ${formatNumber(ledger.rank)}` : ''}`, [ledger]);
 
   const onFactionClick = () => {
     setCommendationModalOpen(true);
@@ -137,11 +95,16 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
         {faction.maxLevel !== 0 && <span className='faction-progression__level'>{faction.level}</span>}
       </div>
       <div className='faction__progress-bars'>
-        {faction.maxLevel > 50 && faction.maxLevel <= 500 && <Progress id={distinctionProgressId} startLabel='Distinctions' max={faction.maxLevel} value={faction.level} markers={distinctionMarkers}/>}
-        {!faction.guild && <Progress id={commendationProgressId} startLabel='Commendations' max={faction.commendationsTotal} value={faction.commendationsUnlocked}/>}
-        {faction.guild && <Progress id={levelProgressId} startLabel='Level Progress' max={100} value={faction.levelProgress * 100} hideMarkerLabels />}
-        {ledger && <Progress id={ledgerProgressId} startLabel='Ledger' endLabel={<span>{formatNumber(ledger.score)}</span>} max={ledgerMax} value={ledger.score} markers={ledgerMarkers} />}
-        {ledger && <Progress id={ledgerCompletionProgressId} startLabel='Ledger Times Completed' max={ledger.maxLevel} value={ledger.bands[0].level} markers={ledgerCompletionMakers} />}
+        {distinctionMarkers.length > 0 && <Progress id={distinctionProgressId} startLabel='Distinctions' max={faction.maxLevel} value={faction.level} markers={distinctionMarkers}/>}
+        <Progress id={commendationProgressId} startLabel='Commendations' max={faction.commendationsTotal} value={faction.commendationsUnlocked}/>
+        {ledger && <Progress id={ledgerProgressId}
+          className='ledger-progress'
+          startLabel={<div className='ledger-label'><span>Ledger</span>{ledgerRank && <span className='ledger-label__secondary'>{ledgerRank}</span>}</div>}
+          endLabel={<div className='ledger-label'><span className='ledger-label__secondary'>{ledgerDiff}</span><span>{formatNumber(ledger.score)}</span></div>}
+          max={ledgerMax}
+          value={ledger.score}
+          markers={ledgerMarkers}
+        />}
       </div>
     </button>
     <CommendationsModal id={faction.id} open={commendationModalOpen} title={faction.name} closeClick={() => setCommendationModalOpen(false)} campaigns={faction.campaigns} />

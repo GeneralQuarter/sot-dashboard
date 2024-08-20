@@ -19,8 +19,9 @@ type ProgressMarkerProps = {
 
 type ProgressProps = {
   id: string;
-  startLabel: string;
-  endLabel?: ReactElement;
+  className?: string;
+  startLabel: string | ReactElement;
+  endLabel?: string | ReactElement;
   value: number;
   max: number;
   markers?: ProgressMarker[];
@@ -51,7 +52,8 @@ const ProgressMarker: FC<ProgressMarkerProps> = ({ label, value, max, currentVal
   </div>
 }
 
-const Progress: FC<ProgressProps> = ({ id, startLabel, endLabel, value, max, markers = [], hideMarkerLabels = false }) => {
+const Progress: FC<ProgressProps> = ({ id, className: _className, startLabel, endLabel, value, max, markers = [], hideMarkerLabels = false }) => {
+  const className = useMemo(() => ['progress', ...(_className?.split(' ') ?? [])].join(' '), [_className]);
   const markersId = useMemo(() => `${id}__markers`, [id]);
   const _markers = useMemo(() => {
     if (markers.length === 0) {
@@ -72,10 +74,10 @@ const Progress: FC<ProgressProps> = ({ id, startLabel, endLabel, value, max, mar
     ]
   }, [markers, max, value, hideMarkerLabels]);
 
-  return <div className='progress'>
+  return <div className={className}>
     <label htmlFor={id} className='progress__label'>
-      <span>{startLabel}</span>
-      {endLabel}
+      {typeof startLabel === 'string' ? <span>{startLabel}</span> : <>{startLabel}</>}
+      {typeof endLabel === 'string' ? <span>{endLabel}</span> : <>{endLabel}</>}
     </label>
     <div className='progress__wrapper'>
       <progress id={id} className='progress__progress'  max={max} value={value} />

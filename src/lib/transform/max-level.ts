@@ -5,9 +5,9 @@ const maxLevel: {[factionIdOrGuild: string]: number} = {
   MerchantAlliance: 500,
   OrderOfSouls: 500,
   HuntersCall: 50,
-  Guilds: 100,
-  PirateLord: 1000,
-  Flameheart: 1000,
+  Guilds: 1000,
+  PirateLord: 1001,
+  Flameheart: 1001,
 };
 
 export default function getMaxLevel(factionIdOrGuild: string): number {

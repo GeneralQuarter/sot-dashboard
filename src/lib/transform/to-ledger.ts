@@ -17,6 +17,7 @@ export function toLedger(factionIdOrGuild: string, ledger: SOTLedgerResponse): L
   return {
     maxLevel: getLedgerMaxLevel(factionIdOrGuild),
     score: ledger.current.global.user.score,
+    rank: ledger.current.global.user.rank,
     bands: ledger.current.global.Bands.filter(b => !b.IsUnrankedBand).map(b => toLedgerBand(factionIdOrGuild, b)),
     endDate: new Date(ledger.current.global.EndDate),
   };

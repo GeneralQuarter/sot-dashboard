@@ -67,7 +67,9 @@
   }
 
   &__marker-image {
-    width: var(--spacing-l);
-    height: var(--spacing-l);
+    --marker-image-size: var(--spacing-l);
+
+    width: var(--marker-image-size);
+    height: var(--marker-image-size);
   }
 }
