@@ -8,11 +8,13 @@ import useFactions from './hooks/useFactions'
 import useRefreshDate from './hooks/useRefreshDate'
 import ConfigProvider from './components/ConfigProvider'
 import useConfig from './hooks/useConfig'
+import TreasuresModal from './components/TreasuresModal'
 
 function App() {
   const [config] = useConfig();
   const [reputationsLoading, setReputationLoading] = useState<boolean>(false);
   const [ledgersLoading, setLedgersLoading] = useState<boolean>(false);
+  const [treasuresModalOpen, setTreasuresModalOpen] = useState<boolean>(false);
   const [balance, refreshBalance] = useBalance();
   const [factions, ledgers, refreshReputations, refreshLedgers] = useFactions();
   const [reputationLastUpdated, updateReputationLastUpdated] = useRefreshDate('sot-dashboard-reputation-last-updated');
@@ -85,12 +87,14 @@ function App() {
           <button onClick={onRefreshLedgers} className='status__refresh-button' disabled={ledgersLoading}>{ledgersLoading ? 'Refreshing...' : 'Refresh Ledgers'}</button>
           {ledgerLastUpdated && <span className='status__description'>Ledger ends {ledgerEndDate && <time dateTime={ledgerEndDate.toISOString()}>in {ledgerEndDistance}</time>}, last updated {ledgerLastUpdated && <time dateTime={ledgerLastUpdated.toISOString()}>{ledgerLastUpdatedDistance} ago</time>}</span>}
         </div>
+        <button onClick={() => setTreasuresModalOpen(true)}>Treasures</button>
       </Header>
       <main className='app-main'>
         {factions.map((faction) => (
           <Faction key={faction.id} faction={faction} ledger={ledgers[faction.id]} />
         ))}
       </main>
+      <TreasuresModal open={treasuresModalOpen} closeClick={() => setTreasuresModalOpen(false)} />
     </ConfigProvider>
   )
 }

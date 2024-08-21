@@ -1,0 +1,83 @@
+$typeColor: (
+  "OrderofSouls": #662e37,
+  "GoldHoarders": #5c523a,
+  "MerchantAlliance": #0b5c6e,
+  "ReapersBones": #63545c,
+  "AthenasFortune": #577771,
+  "HuntersCall": #506063,
+  "BilgeRats": #3b2424,
+);
+
+.treasures-modal {
+  .modal__content {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  &__search {
+    appearance: none;
+    border-radius: var(--spacing-s);
+    border: none;
+    padding: var(--spacing-m);
+    font-family: inherit;
+  }
+
+  &__table {
+    border: none;
+    position: relative;
+    font-size: 14px;
+
+    td, th {
+      padding: var(--spacing-m) var(--spacing-l);
+      text-align: right;
+
+      &:nth-child(1) {
+        text-align: left;
+      }
+    }
+
+    .treasure-type {
+      background-color: var(--body-secondary-background-color) !important;
+      position: sticky;
+      inset-block-start: 0;
+
+      @each $property, $value in $typeColor {
+        &.#{$property} {
+          background-color: $value !important;
+        }
+      }
+    }
+
+    .treasure-subtype {
+      font-size: 12px;
+      color: var(--font-secondary-color);
+    }
+
+    .currency-display {
+      justify-content: end;
+    }
+
+    .base-commissioned-values {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-m);
+
+      span:nth-child(2), .currency-display:nth-child(2) {
+        color: var(--font-secondary-color);
+      }
+    }
+
+    thead {
+      inset-block-start: 0;
+      position: sticky;
+      background-color: transparent;
+      z-index: 1;
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background-color: var(--body-background-color-lighter);
+      }
+    }
+  }
+}

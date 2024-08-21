@@ -1,0 +1,4161 @@
+[
+  {
+    "name": "Admiral's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1525,
+        "max": 1575
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4650
+      }
+    }
+  },
+  {
+    "name": "Adorned Receptacle",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "All-Seeing Eye of Souls",
+    "type": "Order of Souls Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 15000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 45000
+      }
+    }
+  },
+  {
+    "name": "Ammo Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    }
+  },
+  {
+    "name": "Ancient Goblet",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 60,
+        "max": 130
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 300
+      }
+    }
+  },
+  {
+    "name": "Ancient Legacy Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Argent Silver Key",
+    "type": "Gold Hoarder's Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1700
+      }
+    }
+  },
+  {
+    "name": "Artifact of Legendary Hunger",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Legend of the Veil Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2500,
+        "max": 2750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4400
+      }
+    }
+  },
+  {
+    "name": "Ashen Admiral's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1825,
+        "max": 1875
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5550
+      }
+    }
+  },
+  {
+    "name": "Ashen Baron's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2250,
+        "max": 2300
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6825
+      }
+    }
+  },
+  {
+    "name": "Ashen Captain's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1100,
+        "max": 2100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4800
+      }
+    }
+  },
+  {
+    "name": "Ashen Castaway's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Ashen Chest",
+    "type": "Bilge Rats Treasure",
+    "subType": "Container Chest",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 5
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 540
+      }
+    }
+  },
+  {
+    "name": "Ashen Chest of Legends",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 13000,
+        "max": 15000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 16200
+      }
+    }
+  },
+  {
+    "name": "Ashen Corrupted Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3210,
+        "max": 3230
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9660
+      }
+    }
+  },
+  {
+    "name": "Ashen Dark Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1240,
+        "max": 1260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3750
+      }
+    }
+  },
+  {
+    "name": "Ashen Disgraced Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 350,
+        "max": 750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1620
+      }
+    }
+  },
+  {
+    "name": "Ashen Foul Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 180,
+        "max": 350
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 810
+      }
+    }
+  },
+  {
+    "name": "Ashen Hateful Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 750,
+        "max": 1450
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3240
+      }
+    }
+  },
+  {
+    "name": "Ashen King's Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5800,
+        "max": 5900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 17550
+      }
+    }
+  },
+  {
+    "name": "Ashen King's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3700,
+        "max": 3800
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 11250
+      }
+    }
+  },
+  {
+    "name": "Ashen Marauder's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Ashen Sailor's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1300,
+        "max": 1350
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3975
+      }
+    }
+  },
+  {
+    "name": "Ashen Sea Master's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1700,
+        "max": 1750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5175
+      }
+    }
+  },
+  {
+    "name": "Ashen Seafarer's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Ashen Vicious Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 4800,
+        "max": 4850
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 14475
+      }
+    }
+  },
+  {
+    "name": "Ashen Vile Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1850,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5625
+      }
+    }
+  },
+  {
+    "name": "Ashen Villainous Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1450,
+        "max": 2800
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6480
+      }
+    }
+  },
+  {
+    "name": "Ashen Winds Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 10500,
+        "max": 15750
+      }
+    }
+  },
+  {
+    "name": "Ashes of Ruin",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2250,
+        "max": 2300
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6825
+      }
+    }
+  },
+  {
+    "name": "Ashes of the Damned",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1150,
+        "max": 1400
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3840
+      }
+    }
+  },
+  {
+    "name": "Athena's Fortune Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Athena's Relic",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3550,
+        "max": 3800
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2700
+      }
+    }
+  },
+  {
+    "name": "Bait Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 900,
+        "max": 1100
+      }
+    }
+  },
+  {
+    "name": "Banana Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 600,
+        "max": 1100
+      }
+    }
+  },
+  {
+    "name": "Baron's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2000,
+        "max": 2050
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6075
+      }
+    }
+  },
+  {
+    "name": "Bewitching Doll",
+    "type": "Order of Souls Treasure",
+    "subType": "Dark Relic",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1690,
+        "max": 1710
+      }
+    }
+  },
+  {
+    "name": "Black Coated Pig",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 70,
+        "max": 150
+      },
+      "commissioned": {
+        "min": 700,
+        "max": 1500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 216
+      },
+      "commissioned": {
+        "min": 3240
+      }
+    }
+  },
+  {
+    "name": "Black Plumed Chicken",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 70,
+        "max": 150
+      },
+      "commissioned": {
+        "min": 700,
+        "max": 1500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 216
+      },
+      "commissioned": {
+        "min": 3240
+      }
+    }
+  },
+  {
+    "name": "Black Scaled Snake",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 70,
+        "max": 150
+      },
+      "commissioned": {
+        "min": 700,
+        "max": 1500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 216
+      },
+      "commissioned": {
+        "min": 3240
+      }
+    }
+  },
+  {
+    "name": "Blue Dappled Snake",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 30,
+        "max": 70
+      },
+      "commissioned": {
+        "min": 300,
+        "max": 700
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 108
+      },
+      "commissioned": {
+        "min": 1620
+      }
+    }
+  },
+  {
+    "name": "Box of Wondrous Secrets",
+    "type": "Miscellaneous Treasure",
+    "subType": "Box of Wondrous Secrets",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 25000
+      }
+    }
+  },
+  {
+    "name": "Brimstone Casket",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Broken Athena's Fortune Flag",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 0,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Broken Emissary Flags",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Broken Gold Hoarders Flag",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 0,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Broken Merchant Alliance Flag",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 0,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Broken Order of Souls Flag",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 0,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Broken Reaper's Bones Flag",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Broken Emissary Flag",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1,
+        "max": 10500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 0,
+        "max": 30000
+      }
+    }
+  },
+  {
+    "name": "Bronze Secret-Keeper",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 60,
+        "max": 130
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 300
+      }
+    }
+  },
+  {
+    "name": "Bullion Crown",
+    "type": "Gold Hoarder's Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 9800,
+        "max": 10200
+      }
+    }
+  },
+  {
+    "name": "Bullion Gold Key",
+    "type": "Gold Hoarder's Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1700
+      }
+    }
+  },
+  {
+    "name": "Cannonball Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 600,
+        "max": 1100
+      },
+      "commissioned": {
+        "min": 1200,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      },
+      "commissioned": {
+        "min": 4650
+      }
+    }
+  },
+  {
+    "name": "Cannonball Crate of the Damned",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 900,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Captain Skull of the Damned",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1700,
+        "max": 2950
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 7290
+      }
+    }
+  },
+  {
+    "name": "Captain's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Captain's Logbook",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Captain's Logbook",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 300,
+        "max": 25000
+      }
+    }
+  },
+  {
+    "name": "Castaway's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 60,
+        "max": 130
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 300
+      }
+    }
+  },
+  {
+    "name": "Chalice of Ancient Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 570,
+        "max": 620
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Chalice of the Ashen Curse",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Chest of a Thousand Grogs",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2200,
+        "max": 2600
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 7200
+      }
+    }
+  },
+  {
+    "name": "Chest of Ancient Tributes",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 3400
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9720
+      }
+    }
+  },
+  {
+    "name": "Chest of Boundless Sorrow",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 6000,
+        "max": 6800
+      }
+    }
+  },
+  {
+    "name": "Chest of Everlasting Sorrow",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 6000,
+        "max": 6800
+      }
+    }
+  },
+  {
+    "name": "Chest of Fortune",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 20000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 50000
+      }
+    }
+  },
+  {
+    "name": "Chest of Legends",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 8600,
+        "max": 11000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 10800
+      }
+    }
+  },
+  {
+    "name": "Chest of Rage",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 3500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9720
+      }
+    }
+  },
+  {
+    "name": "Chest of Sorrow",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 3500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9720
+      }
+    }
+  },
+  {
+    "name": "Chest of the Damned",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1160
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3300
+      }
+    }
+  },
+  {
+    "name": "Coffer of Aged Grog",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Coffer",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 540
+      }
+    }
+  },
+  {
+    "name": "Coffer of Antiquated Coffee",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Coffer",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 260,
+        "max": 470
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Coffer of Forgotten Jewels",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Coffer",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1100,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4320
+      }
+    }
+  },
+  {
+    "name": "Coffer of Timeworn Metals",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Coffer",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 500,
+        "max": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Cognac of Distant Horizons",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Cognac of Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Coral Captain's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 980,
+        "max": 1925
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4200
+      }
+    }
+  },
+  {
+    "name": "Coral Castaway's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 105,
+        "max": 228
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 525
+      }
+    }
+  },
+  {
+    "name": "Coral Marauder's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 490,
+        "max": 910
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2100
+      }
+    }
+  },
+  {
+    "name": "Coral Seafarer's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 245,
+        "max": 455
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1050
+      }
+    }
+  },
+  {
+    "name": "Coral Treasure Chest",
+    "type": "Miscellaneous Treasure",
+    "subType": "Container Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 375,
+        "max": 780
+      }
+    }
+  },
+  {
+    "name": "Corrupted Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2440,
+        "max": 2460
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 7350
+      }
+    }
+  },
+  {
+    "name": "Cradle of Virtue",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2215,
+        "max": 2235
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6675
+      }
+    }
+  },
+  {
+    "name": "Crate of Ancient Bone Dust",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2100,
+        "max": 5400
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 12960
+      }
+    }
+  },
+  {
+    "name": "Crate of Brimstone Rum",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1970,
+        "max": 1990
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5940
+      }
+    }
+  },
+  {
+    "name": "Crate of Broken Stone",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 105,
+        "max": 800
+      }
+    }
+  },
+  {
+    "name": "Crate of Devil's Cloth",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 200,
+        "max": 1400
+      }
+    }
+  },
+  {
+    "name": "Crate of Devil's Plants",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 200,
+        "max": 1400
+      }
+    }
+  },
+  {
+    "name": "Crate of Devil's Rum Bottles",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 200,
+        "max": 1400
+      }
+    }
+  },
+  {
+    "name": "Crate of Elegant Cloth",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1640,
+        "max": 1660
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4950
+      }
+    }
+  },
+  {
+    "name": "Crate of Exotic Plants",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1640,
+        "max": 1660
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4950
+      }
+    }
+  },
+  {
+    "name": "Crate of Exotic Silks",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 500,
+        "max": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Crate of Exquisite Spices",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1100,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4320
+      }
+    }
+  },
+  {
+    "name": "Crate of Extraordinary Minerals",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1100,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4320
+      }
+    }
+  },
+  {
+    "name": "Crate of Fine Ore",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 500,
+        "max": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Crate of Fine Sugar",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 540
+      }
+    }
+  },
+  {
+    "name": "Crate of Fire-woven Cloth",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1970,
+        "max": 1990
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5940
+      }
+    }
+  },
+  {
+    "name": "Crate of Immaculate Diamonds",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 3100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9150
+      }
+    }
+  },
+  {
+    "name": "Crate of Legendary Voyages",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2100,
+        "max": 2200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Crate of Luxurious Cloth",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 700
+      }
+    }
+  },
+  {
+    "name": "Crate of Plants",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 700
+      }
+    }
+  },
+  {
+    "name": "Crate of Precious Gemstones",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2100,
+        "max": 3600
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 8640
+      }
+    }
+  },
+  {
+    "name": "Crate of Rare Tea",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 260,
+        "max": 470
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Crate of Raw Sugar",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 80,
+        "max": 600
+      }
+    }
+  },
+  {
+    "name": "Crate of Rum Bottles",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 700
+      }
+    }
+  },
+  {
+    "name": "Crate of Searing Plants",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1970,
+        "max": 1990
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5940
+      }
+    }
+  },
+  {
+    "name": "Crate of The Finest Rum",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1640,
+        "max": 1660
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4950
+      }
+    }
+  },
+  {
+    "name": "Crate of Unclassified Gemstones",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 120,
+        "max": 900
+      }
+    }
+  },
+  {
+    "name": "Crate of Unfiltered Minerals",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 110,
+        "max": 850
+      }
+    }
+  },
+  {
+    "name": "Crate of Ungraded Tea",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 85,
+        "max": 650
+      }
+    }
+  },
+  {
+    "name": "Crate of Unrefined Spices",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 750
+      }
+    }
+  },
+  {
+    "name": "Crate of Unsorted Silks",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Commodity Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 90,
+        "max": 700
+      }
+    }
+  },
+  {
+    "name": "Crate of Volcanic Stone",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 260,
+        "max": 470
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Crown of Flame",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3800,
+        "max": 3900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 11550
+      }
+    }
+  },
+  {
+    "name": "Crown of Hope",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3100,
+        "max": 3200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9450
+      }
+    }
+  },
+  {
+    "name": "Dark Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1050
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3075
+      }
+    }
+  },
+  {
+    "name": "Decorative Coffer",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Devil's Remnant",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Disgraced Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 180,
+        "max": 350
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 810
+      }
+    }
+  },
+  {
+    "name": "Disgraced Coral Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 315,
+        "max": 613
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1419
+      }
+    }
+  },
+  {
+    "name": "Elaborate Flagon",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Emerald Breath of the Sea",
+    "type": "Miscellaneous Treasure",
+    "subType": "Breath of the Sea",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 6000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 18000
+      }
+    }
+  },
+  {
+    "name": "Emerald Mermaid Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Mermaid Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4500
+      }
+    }
+  },
+  {
+    "name": "Emerald Siren Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Siren Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1500
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4500
+      }
+    }
+  },
+  {
+    "name": "Eminent Merchant Manifest",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Merchant Manifest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Enchantment Vessel",
+    "type": "Order of Souls Treasure",
+    "subType": "Dark Relic",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1948,
+        "max": 1959
+      }
+    }
+  },
+  {
+    "name": "Esteemed Merchant Manifest",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Merchant Manifest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2500
+      }
+    }
+  },
+  {
+    "name": "Evil Eye",
+    "type": "Order of Souls Treasure",
+    "subType": "Dark Relic",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1952,
+        "max": 1960
+      }
+    }
+  },
+  {
+    "name": "Eye of Souls",
+    "type": "Order of Souls Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 15000
+      }
+    }
+  },
+  {
+    "name": "Firebomb Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1150,
+        "max": 1950
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Fish Bones",
+    "type": "Hunter's Call Treasure",
+    "subType": "Treacherous Plunder",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    }
+  },
+  {
+    "name": "Flora of Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Foul Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 90,
+        "max": 180
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 405
+      }
+    }
+  },
+  {
+    "name": "Foul Coral Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 158,
+        "max": 315
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 711
+      }
+    }
+  },
+  {
+    "name": "Fruit Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 600,
+        "max": 1100
+      },
+      "commissioned": {
+        "min": 1200,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      },
+      "commissioned": {
+        "min": 4650
+      }
+    }
+  },
+  {
+    "name": "Generous Gift",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Gift",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Gilded Chalice",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Gilded Relic of Ancient Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1400,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Glittering Hoarder's Reliquary",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 15000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 45000
+      }
+    }
+  },
+  {
+    "name": "Gold Striped Pig",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 150,
+        "max": 300
+      },
+      "commissioned": {
+        "min": 1500,
+        "max": 3000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 432
+      },
+      "commissioned": {
+        "min": 6480
+      }
+    }
+  },
+  {
+    "name": "Gold Treasure Vault Keys",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Vault Key",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3600,
+        "max": 3750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 11325
+      }
+    }
+  },
+  {
+    "name": "Golden Chicken",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 150,
+        "max": 300
+      },
+      "commissioned": {
+        "min": 1500,
+        "max": 3000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 432
+      },
+      "commissioned": {
+        "min": 6480
+      }
+    }
+  },
+  {
+    "name": "Golden Coral Reliquary",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 480,
+        "max": 910
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2100
+      }
+    }
+  },
+  {
+    "name": "Golden Reliquary",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Golden Snake",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 150,
+        "max": 300
+      },
+      "commissioned": {
+        "min": 1500,
+        "max": 3000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 432
+      },
+      "commissioned": {
+        "min": 6280
+      }
+    }
+  },
+  {
+    "name": "Grail of the Ashen Curse",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Gunpowder Barrel",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Explosive",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 100,
+        "max": 200
+      },
+      "commissioned": {
+        "min": 500,
+        "max": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 432
+      },
+      "commissioned": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "Hateful Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 350,
+        "max": 750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1620
+      }
+    }
+  },
+  {
+    "name": "Hateful Coral Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 613,
+        "max": 1313
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2835
+      }
+    }
+  },
+  {
+    "name": "Heart of Nature Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Hoarder's Reliquary",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 15000
+      }
+    }
+  },
+  {
+    "name": "Horn of Fair Winds",
+    "type": "Miscellaneous Treasure",
+    "subType": "Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2750,
+        "max": 3250
+      }
+    }
+  },
+  {
+    "name": "Humble Gift",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Gift",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 5
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2700
+      }
+    }
+  },
+  {
+    "name": "Jar of Athena's Incense",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Legend of the Veil Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1400,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1800
+      }
+    }
+  },
+  {
+    "name": "Keeper of the Ashen Curse",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Keg of Ancient Black Powder",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Explosive",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 5000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4320
+      }
+    }
+  },
+  {
+    "name": "King's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3000,
+        "max": 3100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9150
+      }
+    }
+  },
+  {
+    "name": "Legendary Fortune Keeper",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2500,
+        "max": 2750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Magma's Grail",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1100,
+        "max": 2100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4800
+      }
+    }
+  },
+  {
+    "name": "Marauder's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Mutinous Effigy",
+    "type": "Order of Souls Treasure",
+    "subType": "Dark Relic",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1690,
+        "max": 1710
+      }
+    }
+  },
+  {
+    "name": "Mysterious Coral Vessel",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 105,
+        "max": 228
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 525
+      }
+    }
+  },
+  {
+    "name": "Mysterious Vessel",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 60,
+        "max": 130
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 300
+      }
+    }
+  },
+  {
+    "name": "Ocean's Plunder Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Offering of Legendary Goods",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Legend of the Veil Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2500,
+        "max": 2750
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Old Boot",
+    "type": "Hunter's Call Treasure",
+    "subType": "Treacherous Plunder",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    }
+  },
+  {
+    "name": "Old Hat",
+    "type": "Hunter's Call Treasure",
+    "subType": "Treacherous Plunder",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    }
+  },
+  {
+    "name": "Old Skull",
+    "type": "Hunter's Call Treasure",
+    "subType": "Treacherous Plunder",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    }
+  },
+  {
+    "name": "Opulent Curio",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Orb of Secrets",
+    "type": "Miscellaneous Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 20000
+      }
+    }
+  },
+  {
+    "name": "Ornate Carafe",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 280,
+        "max": 520
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1200
+      }
+    }
+  },
+  {
+    "name": "Peculiar Coral Relic",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 980,
+        "max": 1925
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4200
+      }
+    }
+  },
+  {
+    "name": "Peculiar Relic",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 560,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2400
+      }
+    }
+  },
+  {
+    "name": "Pink and Black Spotted Pig",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 30,
+        "max": 70
+      },
+      "commissioned": {
+        "min": 300,
+        "max": 700
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 108
+      },
+      "commissioned": {
+        "min": 1620
+      }
+    }
+  },
+  {
+    "name": "Pink Bristled Pig",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10,
+        "max": 30
+      },
+      "commissioned": {
+        "min": 100,
+        "max": 300
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 54
+      },
+      "commissioned": {
+        "min": 810
+      }
+    }
+  },
+  {
+    "name": "Pirate's Life Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Plated Silver Key",
+    "type": "Gold Hoarder's Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1700
+      }
+    }
+  },
+  {
+    "name": "Prosperous Hoarder's Reliquary",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 30000
+      }
+    }
+  },
+  {
+    "name": "Prosperous Merchant Manifest",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Merchant Manifest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5000
+      }
+    }
+  },
+  {
+    "name": "Rag and Bone Crates",
+    "type": "Bilge Rats Treasure",
+    "subType": "Trade Good Crate",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 5
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Reaper's Bounty",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Reaper's Box",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 10800
+      }
+    }
+  },
+  {
+    "name": "Reaper's Chest",
+    "type": "Reaper's Bones Treasure",
+    "subType": "Reaper's Box",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 25
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 10800
+      }
+    }
+  },
+  {
+    "name": "Red Speckled Chicken",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 30,
+        "max": 70
+      },
+      "commissioned": {
+        "min": 300,
+        "max": 700
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 108
+      },
+      "commissioned": {
+        "min": 1620
+      }
+    }
+  },
+  {
+    "name": "Red Striped Snake",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10,
+        "max": 30
+      },
+      "commissioned": {
+        "min": 100,
+        "max": 300
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 54
+      },
+      "commissioned": {
+        "min": 810
+      }
+    }
+  },
+  {
+    "name": "Revered Merchant Manifest",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Merchant Manifest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 4000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 12000
+      }
+    }
+  },
+  {
+    "name": "Ritual Skull",
+    "type": "Bilge Rats Treasure",
+    "subType": "Bounty Skull",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 750
+      }
+    }
+  },
+  {
+    "name": "Roaring Goblet",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Ruby Breath of the Sea",
+    "type": "Miscellaneous Treasure",
+    "subType": "Breath of the Sea",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 8000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 24000
+      }
+    }
+  },
+  {
+    "name": "Ruby Mermaid Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Mermaid Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6000
+      }
+    }
+  },
+  {
+    "name": "Ruby Siren Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Siren Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6000
+      }
+    }
+  },
+  {
+    "name": "Sailor's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1050
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3075
+      }
+    }
+  },
+  {
+    "name": "Sapphire Breath of the Sea",
+    "type": "Miscellaneous Treasure",
+    "subType": "Breath of the Sea",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 4000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 12000
+      }
+    }
+  },
+  {
+    "name": "Sapphire Mermaid Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Mermaid Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Sapphire Siren Gem",
+    "type": "Miscellaneous Treasure",
+    "subType": "Siren Gem",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Scrolls of Charted Waters",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 15000
+      }
+    }
+  },
+  {
+    "name": "Scrolls of Shrouded Waters",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 30000
+      }
+    }
+  },
+  {
+    "name": "Scrolls of Undiscovered Waters",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 15000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 45000
+      }
+    }
+  },
+  {
+    "name": "Sea Master's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1500,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4575
+      }
+    }
+  },
+  {
+    "name": "Sea of the Damned Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Seafarer's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Silks of Distant Horizons",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Silks of Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Cargo Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Silver Treasure Vault Keys",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Vault Key",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2300,
+        "max": 2400
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 7305
+      }
+    }
+  },
+  {
+    "name": "Silvered Coral Cup",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 245,
+        "max": 455
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1050
+      }
+    }
+  },
+  {
+    "name": "Silvered Cup",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 140,
+        "max": 260
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 600
+      }
+    }
+  },
+  {
+    "name": "Skeleton Captain's Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1150,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 6000
+      }
+    }
+  },
+  {
+    "name": "Skeleton Captain's Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 850,
+        "max": 2200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4860
+      }
+    }
+  },
+  {
+    "name": "Skeleton Chest",
+    "type": "Miscellaneous Treasure",
+    "subType": "Container Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 250,
+        "max": 520
+      }
+    }
+  },
+  {
+    "name": "Skull of Ancient Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 570,
+        "max": 620
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Skull of Athena's Blessing",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Legend of the Veil Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3550,
+        "max": 3850
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2700
+      }
+    }
+  },
+  {
+    "name": "Skull of Destiny",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000
+      }
+    }
+  },
+  {
+    "name": "Skull of Siren Song",
+    "type": "Miscellaneous Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 50000
+      }
+    }
+  },
+  {
+    "name": "Skull of the Damned",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1050,
+        "max": 1250
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3480
+      }
+    }
+  },
+  {
+    "name": "Sterling Silver Key",
+    "type": "Gold Hoarder's Treasure",
+    "subType": null,
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 1700
+      }
+    }
+  },
+  {
+    "name": "Stone Treasure Vault Keys",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Vault Key",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1200,
+        "max": 1400
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4125
+      }
+    }
+  },
+  {
+    "name": "Stool",
+    "type": "Miscellaneous Treasure",
+    "subType": "Stool",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 81
+      }
+    }
+  },
+  {
+    "name": "Storage Crate of the Damned",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 900,
+        "max": 1100
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Stronghold Chest",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Treasure Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1500,
+        "max": 3000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 12000
+      }
+    }
+  },
+  {
+    "name": "Stronghold Gunpowder Barrel",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Explosive",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 2750,
+        "max": 6000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 12960
+      }
+    }
+  },
+  {
+    "name": "Stronghold Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1800,
+        "max": 4200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9720
+      }
+    }
+  },
+  {
+    "name": "Talisman of Fortunes",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5000
+      }
+    }
+  },
+  {
+    "name": "Talisman of Great Fortunes",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    }
+  },
+  {
+    "name": "Talisman of Magnificent Fortunes",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 15000
+      }
+    }
+  },
+  {
+    "name": "Tome of Curses I",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Curses II",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Curses III",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Curses IV",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Curses V",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Fire I",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Fire II",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Fire III",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Fire IV",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Fire V",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Power I",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Power II",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Power III",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Power IV",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Power V",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Resurrection I",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Resurrection II",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Resurrection III",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Resurrection IV",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Tome of Resurrection V",
+    "type": "Bilge Rats Treasure",
+    "subType": "Ashen Tome",
+    "currency": "doubloons",
+    "reward": {
+      "base": {
+        "min": 10
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 1080
+      }
+    }
+  },
+  {
+    "name": "Treasure Chest",
+    "type": "Miscellaneous Treasure",
+    "subType": "Container Chest",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 250,
+        "max": 520
+      }
+    }
+  },
+  {
+    "name": "Trident of Dark Tides",
+    "type": "Miscellaneous Treasure",
+    "subType": "Treasure",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 250
+      }
+    }
+  },
+  {
+    "name": "Veiled Eye of Souls",
+    "type": "Order of Souls Treasure",
+    "subType": "Raid Treasures",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 30000
+      }
+    }
+  },
+  {
+    "name": "Vessel of Fire",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3300,
+        "max": 3350
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 9975
+      }
+    }
+  },
+  {
+    "name": "Vestige of Power",
+    "type": "Gold Hoarder's Treasure",
+    "subType": "Artefact",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1655,
+        "max": 1675
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4995
+      }
+    }
+  },
+  {
+    "name": "Vicious Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 3600,
+        "max": 3650
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 10875
+      }
+    }
+  },
+  {
+    "name": "Vile Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1500,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 4575
+      }
+    }
+  },
+  {
+    "name": "Villainous Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 750,
+        "max": 1450
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3240
+      }
+    }
+  },
+  {
+    "name": "Villainous Coral Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1313,
+        "max": 2538
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 5670
+      }
+    }
+  },
+  {
+    "name": "Villainous Foes Firework Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1000,
+        "max": 2000
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      }
+    }
+  },
+  {
+    "name": "Villainous Skull of Ancient Fortune",
+    "type": "Athena's Fortune Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 1400,
+        "max": 1550
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 2160
+      }
+    }
+  },
+  {
+    "name": "White Feathered Chicken",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Animal",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 10,
+        "max": 30
+      },
+      "commissioned": {
+        "min": 100,
+        "max": 300
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 54
+      },
+      "commissioned": {
+        "min": 810
+      }
+    }
+  },
+  {
+    "name": "Wood Crate",
+    "type": "Merchant Alliance Treasure",
+    "subType": "Resource Crate",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 600,
+        "max": 1100
+      },
+      "commissioned": {
+        "min": 1200,
+        "max": 1900
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 3000
+      },
+      "commissioned": {
+        "min": 4650
+      }
+    }
+  },
+  {
+    "name": "Wrathful King's Bounty Skull",
+    "type": "Order of Souls Treasure",
+    "subType": "Bounty Skull",
+    "currency": "gold",
+    "reward": {
+      "base": {
+        "min": 5100,
+        "max": 5200
+      }
+    },
+    "emissary": {
+      "base": {
+        "min": 15450
+      }
+    }
+  }
+]

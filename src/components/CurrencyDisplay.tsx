@@ -1,15 +1,18 @@
 import { FC, useMemo } from 'react';
 import './CurrencyDisplay.scss';
 import { useConfig } from '../contexts/config';
+import { MinMaxValue } from '../models/min-max-value';
+import formatMinMaxValue from '../lib/formatMinMaxValue';
 
 type CurrencyDisplayProps = {
   code: string;
-  value: number
+  value: number | MinMaxValue;
+  multiplier?: number;
 };
 
-const CurrencyDisplay: FC<CurrencyDisplayProps> = ({ code, value }) => {
+const CurrencyDisplay: FC<CurrencyDisplayProps> = ({ code, value, multiplier = 1 }) => {
   const config = useConfig();
-  const formattedAmount = useMemo(() => new Intl.NumberFormat().format(value), [value]);
+  const formattedAmount = useMemo(() => formatMinMaxValue(value, multiplier), [value, multiplier]);
   const imageSrc = useMemo(() => config && `${config.cdnUrl}/assets/profilev2/${code}.svg`, [code, config]);
 
   return <div className='currency-display'>
