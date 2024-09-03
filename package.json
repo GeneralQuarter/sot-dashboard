@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build --base=/dist/",
     "rat": "node --env-file=.env rat.mjs",
-    "package": "node package.mjs"
+    "package": "node package.mjs",
+    "preversion": "node sync-manifest-version.mjs && git add extension/manifest.json",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "date-fns": "^3.6.0",
