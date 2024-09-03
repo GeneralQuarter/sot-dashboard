@@ -2467,8 +2467,8 @@
     "currency": "gold",
     "reward": {
       "base": {
-        "min": 2750,
-        "max": 3250
+        "min": 1000,
+        "max": 1500
       }
     }
   },
