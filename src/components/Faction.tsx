@@ -79,10 +79,10 @@ const Faction: FC<FactionProps> = ({ faction, ledger }) => {
 
     const diff = ledger.score - ledger.bands[0].thresholdScore;
 
-    return `${diff > 0 ? '+' : '-'}${formatNumber(diff)}`;
+    return `${diff > 0 ? '+' : ''}${formatNumber(diff)}`;
   }, [ledger]);
 
-  const ledgerRank = useMemo(() => `${ledger ? `Rank ${formatNumber(ledger.rank)}` : ''}`, [ledger]);
+  const ledgerRank = useMemo(() => `${ledger && ledger.rank > 0 ? `Rank ${formatNumber(ledger.rank)}` : ''}`, [ledger]);
 
   const onFactionClick = () => {
     setCommendationModalOpen(true);
