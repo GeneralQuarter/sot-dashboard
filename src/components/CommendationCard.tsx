@@ -1,9 +1,7 @@
 import { FC, useMemo } from 'react';
 import type { Commendation } from '../models/commendation';
-import Progress, { ProgressMarker } from './Progress';
-import formatNumber from '../lib/formatNumber';
-import romanize from '../lib/romanize';
 import './CommendationCard.scss';
+import CommendationProgress from './CommendationProgress';
 
 type CommendationCardProps = {
   commendation: Commendation;
@@ -11,28 +9,6 @@ type CommendationCardProps = {
 
 const CommendationCard: FC<CommendationCardProps> = ({ commendation }) => {
   const className = useMemo(() => `commendation-card${commendation.completed ? ' commendation-card--completed' : ''}`, [commendation.completed])
-  const markers = useMemo<ProgressMarker[] | undefined>(() => {
-    if (!commendation.scalar || !commendation.scalar.grades) {
-      return;
-    }
-
-    return commendation.scalar.grades.map((g, i) => ({
-      label: romanize(i + 1),
-      value: g
-    }));
-  }, [commendation.scalar]);
-
-  const endLabel = useMemo(() => {
-    if (!commendation.scalar) {
-      return '';
-    }
-
-    if (commendation.scalar.value === commendation.scalar.maxValue) {
-      return formatNumber(commendation.scalar.maxValue);
-    }
-
-    return `${formatNumber(commendation.scalar.value)}/${formatNumber(commendation.scalar.maxValue)}`;
-  }, [commendation.scalar])
 
   return <article className={className}>
     <div className='commendation-card__content'>
@@ -42,14 +18,9 @@ const CommendationCard: FC<CommendationCardProps> = ({ commendation }) => {
         <p className='commendation-card__subtitle'>{commendation.subtitle}</p>
       </div>
     </div>
-    {commendation.scalar && commendation.scalar.maxValue !== 1 && <Progress 
-        id={`${commendation.title}-progress`} 
-        max={commendation.scalar.maxValue}
-        startLabel=''
-        endLabel={<span>{endLabel}</span>}
-        value={commendation.scalar.value}
-        markers={markers}
-      />}
+    {commendation.scalar && commendation.scalar.maxValue !== 1 && 
+      <CommendationProgress name={commendation.title} scalar={commendation.scalar} />
+    }
   </article>;
 }
 

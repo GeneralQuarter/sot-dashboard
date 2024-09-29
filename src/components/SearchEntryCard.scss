@@ -1,0 +1,52 @@
+.search-entry-card {
+  display: flex;
+  gap: var(--spacing-l);
+  padding: var(--spacing-l);
+  background-color: var(--body-background-color-lighter);
+  border-radius: var(--spacing-s);
+  align-items: center;
+
+  &__image {
+    --commendation-card-image-size: 80px;
+
+    width: var(--commendation-card-image-size);
+    height: var(--commendation-card-image-size);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    flex: 1;
+  }
+
+  &__breadcrumbs {
+    color: var(--font-secondary-color);
+    font-size: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    margin-block: var(--spacing-l) 0;
+  }
+
+  &__end {
+    display: flex;
+    gap: var(--spacing-l);
+    margin-inline-start: auto;
+    text-align: right;
+
+    .base-commissioned-values {
+      align-items: flex-end;
+    }
+  }
+
+  &--completed {
+    background-color: var(--body-secondary-background-color);
+  }
+}

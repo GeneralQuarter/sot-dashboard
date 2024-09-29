@@ -74,7 +74,7 @@ const CommendationsModal: FC<CommendationsModalProps> = ({ id, title, open, camp
           </label>
         ))}
       </div>
-      <input className='commendations-modal__search' type='search' placeholder='Search' value={searchValue} onInput={(e) => setSearchValue(e.currentTarget.value)} />
+      <input className='modal__search' type='search' placeholder='Search' value={searchValue} onInput={(e) => setSearchValue(e.currentTarget.value)} />
     </>
   }
   >

@@ -9,18 +9,20 @@ import useRefreshDate from './hooks/useRefreshDate'
 import ConfigProvider from './components/ConfigProvider'
 import useConfig from './hooks/useConfig'
 import TreasuresModal from './components/TreasuresModal'
+import SearchModal from './components/SearchModal'
+import useOnKeyboardShortcut from './hooks/useOnKeyboardShortcut'
+import useTreasures from './hooks/useTreasures'
 
 function App() {
   const [config] = useConfig();
-  const [reputationsLoading, setReputationLoading] = useState<boolean>(false);
-  const [ledgersLoading, setLedgersLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
   const [treasuresModalOpen, setTreasuresModalOpen] = useState<boolean>(false);
+  const [searchModalOpen, setSearchModalOpen] = useState<boolean>(false);
   const [balance, refreshBalance] = useBalance();
   const [factions, ledgers, refreshReputations, refreshLedgers] = useFactions();
-  const [reputationLastUpdated, updateReputationLastUpdated] = useRefreshDate('sot-dashboard-reputation-last-updated');
-  const [ledgerLastUpdated, updateLedgerLastUpdated] = useRefreshDate('sot-dashboard-ledger-last-updated');
-  const reputationLastUpdatedDistance = useDistanceToNow(reputationLastUpdated);
-  const ledgerLastUpdatedDistance = useDistanceToNow(ledgerLastUpdated);
+  const treasures = useTreasures();
+  const [lastUpdated, updateLastUpdated] = useRefreshDate('sot-dashboard-last-updated');
+  const lastUpdatedDistance = useDistanceToNow(lastUpdated);
   const ledgerEndDate = useMemo(() => {
     const firstValue = Object.values(ledgers)[0];
 
@@ -33,61 +35,46 @@ function App() {
   const ledgerEndDistance = useDistanceToNow(ledgerEndDate);
 
   const onRefreshAll = async () => {
-    setReputationLoading(true);
-    setLedgersLoading(true);
+    setLoading(true);
     try {
       await Promise.all([
         refreshBalance(true),
         refreshReputations(true),
         refreshLedgers(true),
       ]);
-      updateReputationLastUpdated();
-      updateLedgerLastUpdated();
+      updateLastUpdated();
     } catch (e) {
       console.log(e);
     }
-    setReputationLoading(false);
-    setLedgersLoading(false);
+    setLoading(false);
   };
 
-  const onRefreshReputations = async () => {
-    setReputationLoading(true);
-    try {
-      await Promise.all([
-        refreshBalance(true),
-        refreshReputations(true),
-      ]);
-      updateReputationLastUpdated();
-    } catch (e) {
-      console.log(e);
-    }
-    setReputationLoading(false);
-  }
+  useOnKeyboardShortcut({ctrlKey: true, key: 'f'}, () => {
+    setSearchModalOpen(!searchModalOpen);
+  });
 
-  const onRefreshLedgers = async () => {
-    setLedgersLoading(true);
-    try {
-      await refreshLedgers(true);
-      updateReputationLastUpdated();
-    } catch (e) {
-      console.log(e);
-    }
-    setLedgersLoading(false);
-  }
+  useOnKeyboardShortcut({ctrlKey: true, key: 'r'}, () => {
+    onRefreshAll();
+  });
+
+  useOnKeyboardShortcut({ctrlKey: true, key: 'k'}, () => {
+    setTreasuresModalOpen(!treasuresModalOpen);
+  });
 
   return (
     <ConfigProvider config={config}>
       <Header balance={balance}>
-        <button onClick={onRefreshAll} className='refresh-all-button' disabled={reputationsLoading || ledgersLoading}>{reputationsLoading || ledgersLoading ? 'Refreshing...' : 'Refresh All'}</button>
         <div className='status'>
-          <button onClick={onRefreshReputations} className='status__refresh-button' disabled={reputationsLoading}>{reputationsLoading ? 'Refreshing...' : 'Refresh Reputations'}</button>
-          <span className='status__description'>Reputations last updated {reputationLastUpdated && <time dateTime={reputationLastUpdated.toISOString()}>{reputationLastUpdatedDistance} ago</time>}</span>
+          <button onClick={onRefreshAll} className='button refresh-all-button' disabled={loading}>{loading ? 'Refreshing...' : <><span>Refresh</span><kbd>Ctrl+R</kbd></>}</button>
+          <span className='status__description'>
+            Last updated {lastUpdated && <time title={lastUpdated.toISOString()} dateTime={lastUpdated.toISOString()}>{lastUpdatedDistance} ago</time>}
+          </span>
         </div>
         <div className='status'>
-          <button onClick={onRefreshLedgers} className='status__refresh-button' disabled={ledgersLoading}>{ledgersLoading ? 'Refreshing...' : 'Refresh Ledgers'}</button>
-          {ledgerLastUpdated && <span className='status__description'>Ledger ends {ledgerEndDate && <time dateTime={ledgerEndDate.toISOString()}>in {ledgerEndDistance}</time>}, last updated {ledgerLastUpdated && <time dateTime={ledgerLastUpdated.toISOString()}>{ledgerLastUpdatedDistance} ago</time>}</span>}
+          {ledgerEndDate && <span className='status__description'>Ledger Ends in {ledgerEndDate && <time title={ledgerEndDate.toISOString()} dateTime={ledgerEndDate.toISOString()}>{ledgerEndDistance}</time>}</span>}
         </div>
-        <button onClick={() => setTreasuresModalOpen(true)}>Treasures</button>
+        <button className='button' onClick={() => setSearchModalOpen(true)}><span>Search</span><kbd>Ctrl+F</kbd></button>
+        <button className='button' onClick={() => setTreasuresModalOpen(true)}><span>Treasures</span><kbd>Ctrl+K</kbd></button>
       </Header>
       <main className='app-main'>
         {factions.map((faction) => (
@@ -95,6 +82,7 @@ function App() {
         ))}
       </main>
       <TreasuresModal open={treasuresModalOpen} closeClick={() => setTreasuresModalOpen(false)} />
+      <SearchModal open={searchModalOpen} onCloseClick={() => setSearchModalOpen(false)} factions={factions} treasures={treasures} />
     </ConfigProvider>
   )
 }

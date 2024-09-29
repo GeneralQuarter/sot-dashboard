@@ -1,3 +1,5 @@
+import wikiImage from './wikiImage';
+
 const guildIconWikiPaths = [
   '/a/a5/Guild_Mark_1.svg',
   '/2/28/Guild_Mark_2.svg',
@@ -25,7 +27,7 @@ const guildIconWikiPaths = [
   '/9/9a/Guild_Mark_24.svg',
   '/8/8d/Guild_Mark_25.svg',
   '/1/1c/Guild_Mark_26.svg',
-  '/thumb/5/5a/Guild_Mark_27.svg/96px-Guild_Mark_27.svg.png',
+  '/5/5a/Guild_Mark_27.svg',
   '/2/27/Guild_Mark_28.svg',
   '/f/f8/Guild_Mark_29.svg',
   '/6/60/Guild_Mark_30.svg',
@@ -42,5 +44,5 @@ const guildIconWikiPaths = [
 
 export default function guildIconUrl(iconId: string) {
   const index = parseInt(iconId.replace('icon-', '')) - 1;
-  return `https://seaofthieves.wiki.gg/images${guildIconWikiPaths[index]}`;
+  return wikiImage(guildIconWikiPaths[index]);
 }

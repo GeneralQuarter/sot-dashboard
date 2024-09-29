@@ -5,6 +5,7 @@ import './TreasuresModal.scss';
 import CurrencyDisplay from './CurrencyDisplay';
 import formatMinMaxValue from '../lib/formatMinMaxValue';
 import { Treasure } from '../models/treasure';
+import EmissaryFlagInput from './EmissaryFlagInput';
 
 type TreasuresModalProps = {
   open: boolean;
@@ -17,9 +18,6 @@ const lowestToHighestPrice = (t1: Treasure, t2: Treasure): number => {
 
   return n1 - n2;
 }
-
-const emissaryMultipliers = [1, 1.33, 1.66, 2, 2.5];
-const guildEmissaryMultipliers = [1, 1.15, 1.30, 1.45, 1.75];
 
 const nameToFaction = (name: string): string => {
   return name.replace(' Treasure', '').replace(/( |')/g, '');
@@ -41,8 +39,7 @@ const filterGroupTreasures = (groupedTreasures: TreasuresGroup[], search: string
 
 const TreasuresModal: FC<TreasuresModalProps> = ({ open, closeClick }) => {
   const [searchValue, setSearchValue] = useState<string>('');
-  const [emissaryLevel, setEmissaryLevel] = useState<number>(0);
-  const [isGuildEmissary, setIsGuildEmissary] = useState<boolean>(false);
+  const [emissaryMultiplier, setEmissaryMultiplier] = useState<number>(1);
   const treasures = useTreasures();
   const groupedTreasures = useMemo(() => {
     const g = treasures.reduce((acc, t) => {
@@ -60,19 +57,11 @@ const TreasuresModal: FC<TreasuresModalProps> = ({ open, closeClick }) => {
     }))
   }, [treasures]);
   const filteredGroupedTreasures = useMemo(() => filterGroupTreasures(groupedTreasures, searchValue), [searchValue, groupedTreasures])
-  const emissaryMultiplier = useMemo(() => isGuildEmissary ? guildEmissaryMultipliers[emissaryLevel] : emissaryMultipliers[emissaryLevel], [emissaryLevel, isGuildEmissary]);
 
   return <Modal open={open} title='Treasures' className='modal treasures-modal' onCancel={() => closeClick?.()} header={
     <>
       <input className='treasures-modal__search' type='search' placeholder='Search' value={searchValue} onInput={(e) => setSearchValue(e.currentTarget.value)} />
-      <label>
-        Emissary level
-        <input type="range" min={0} max={4} value={emissaryLevel} onChange={(e) => setEmissaryLevel(parseInt(e.currentTarget.value))}/>
-      </label>
-      <label>
-        <input type="checkbox" checked={isGuildEmissary} onChange={() => setIsGuildEmissary(!isGuildEmissary)} />
-        Guild Emissary
-      </label>
+      <EmissaryFlagInput onEmissaryMultiplierChange={setEmissaryMultiplier} />
     </>
   }>
     <table className='treasures-modal__table' cellSpacing="0" cellPadding="0">

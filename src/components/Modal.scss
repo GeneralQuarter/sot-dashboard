@@ -36,6 +36,14 @@
     font-size: 18px;
     margin: 0;
   }
+
+  &__search {
+    appearance: none;
+    border-radius: var(--spacing-s);
+    border: none;
+    padding: var(--spacing-m);
+    font-family: inherit;
+  }
   
   &__close {
     background: none;

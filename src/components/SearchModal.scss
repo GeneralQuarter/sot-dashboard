@@ -1,0 +1,17 @@
+.search-modal {
+  margin: auto;
+  max-width: 800px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 1;
+    padding: var(--spacing-l);
+    gap: var(--spacing-l);
+  }
+
+  .modal__search {
+    width: 100%;
+  }
+}

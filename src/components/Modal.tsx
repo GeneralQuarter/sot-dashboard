@@ -4,7 +4,7 @@ import CloseIcon from './CloseIcon';
 
 type ModalProps = {
   open: boolean;
-  title: string;
+  title?: string;
   header?: ReactElement;
   className?: string;
   onCancel?: () => void;
@@ -27,7 +27,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = ({ open, title, children, class
   return <dialog ref={dialogRef} className={className} onCancel={onCancel}>
     <div className='modal__body'>
       <div className='modal__header'>
-        <h1 className='modal__title'>{title}</h1>
+        {title && <h1 className='modal__title'>{title}</h1>}
         {header}
         <button className='modal__close' onClick={() => onCancel?.()} aria-label='Close commendations modal'>
           <CloseIcon />
