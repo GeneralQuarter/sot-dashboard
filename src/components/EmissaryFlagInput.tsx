@@ -39,6 +39,7 @@ const EmissaryFlagInput: FC<EmissaryFlagInputProps> = ({ onEmissaryMultiplierCha
     <fieldset className='emissary-flag-grade'>
       {emissaryGrades.map(emissaryGrade => (
         <input 
+          key={emissaryGrade}
           name='emissary-flag-grade' 
           type='radio'
           className={`emissary-flag-grade__input${emissaryGrade <=  grade ? ' emissary-flag-grade__input--active' : ''}`}

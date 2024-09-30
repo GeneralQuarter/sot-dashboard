@@ -228,16 +228,16 @@ const ledgerRewards: LedgerRewards = {
   ],
   'Guilds': [
     [
-      "'The Relentless Onslaught'",
-      "'The Constellation's Secret'",
-      "'An Ocean of Siren Song'",
-      "'Secrets of the Ancient Flame'",
+      "‘The Relentless Onslaught’",
+      "‘The Constellation's Secret’",
+      "‘An Ocean of Siren Song’",
+      "‘Secrets of the Ancient Flame’",
     ],
     [
-      "'Guild's First Coin'",
-      "'Astrolabe of Ancient Stars'",
-      "'Mysterious Siren Carving'",
-      "'Dark Hand of Fate'",
+      "‘Guild's First Coin’",
+      "‘Astrolabe of Ancient Stars’",
+      "‘Mysterious Siren Carving’",
+      "‘Dark Hand of Fate’",
     ],
     [
       'Guild of Captured Winds',
