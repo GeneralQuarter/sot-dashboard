@@ -1,6 +1,5 @@
 import { FC, Fragment, useMemo, useState } from 'react';
 import Modal from './Modal';
-import useTreasures from '../hooks/useTreasures';
 import './TreasuresModal.scss';
 import CurrencyDisplay from './CurrencyDisplay';
 import formatMinMaxValue from '../lib/formatMinMaxValue';
@@ -8,6 +7,7 @@ import { Treasure } from '../models/treasure';
 import EmissaryFlagInput from './EmissaryFlagInput';
 
 type TreasuresModalProps = {
+  treasures: Treasure[];
   open: boolean;
   closeClick?: () => void;
 };
@@ -37,10 +37,9 @@ const filterGroupTreasures = (groupedTreasures: TreasuresGroup[], search: string
   })).filter(g => g.treasures.length > 0);
 }
 
-const TreasuresModal: FC<TreasuresModalProps> = ({ open, closeClick }) => {
+const TreasuresModal: FC<TreasuresModalProps> = ({ open, closeClick, treasures = [] }) => {
   const [searchValue, setSearchValue] = useState<string>('');
   const [emissaryMultiplier, setEmissaryMultiplier] = useState<number>(1);
-  const treasures = useTreasures();
   const groupedTreasures = useMemo(() => {
     const g = treasures.reduce((acc, t) => {
       if (!acc[t.type]) {

@@ -1,0 +1,34 @@
+.logged-out-modal {
+  margin: auto;
+  max-width: 500px;
+  max-height: fit-content;
+
+  .modal__body {
+    height: fit-content;
+  }
+
+  .modal__content {
+    height: fit-content;
+    flex-grow: unset;
+    flex-direction: column;
+  }
+
+  &__message {
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-l);
+    font-size: 14px;
+    text-align: center;
+    height: fit-content;
+  }
+
+  &__footer {
+    display: flex;
+    padding: var(--spacing-l);
+    align-items: center;
+
+    .button {
+      width: 100%;
+    }
+  }
+}

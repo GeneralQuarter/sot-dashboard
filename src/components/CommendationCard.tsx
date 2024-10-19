@@ -18,7 +18,7 @@ const CommendationCard: FC<CommendationCardProps> = ({ commendation }) => {
         <p className='commendation-card__subtitle'>{commendation.subtitle}</p>
       </div>
     </div>
-    {commendation.scalar && commendation.scalar.maxValue !== 1 && 
+    {commendation.scalar && 
       <CommendationProgress name={commendation.title} scalar={commendation.scalar} />
     }
   </article>;

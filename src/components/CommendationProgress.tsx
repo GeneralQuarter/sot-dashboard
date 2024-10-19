@@ -22,7 +22,7 @@ const CommendationProgress: FC<CommendationProgressProps> = ({ name, scalar }) =
   }, [scalar]);
 
   const endLabel = useMemo(() => {
-    if (!scalar) {
+    if (!scalar || !scalar.grades) {
       return '';
     }
 

@@ -12,12 +12,15 @@ import TreasuresModal from './components/TreasuresModal'
 import SearchModal from './components/SearchModal'
 import useOnKeyboardShortcut from './hooks/useOnKeyboardShortcut'
 import useTreasures from './hooks/useTreasures'
+import LoggedOutModal from './components/LoggedOutModal'
+import { LoggedOutError } from './lib/sot-api'
 
 function App() {
   const [config] = useConfig();
   const [loading, setLoading] = useState<boolean>(false);
   const [treasuresModalOpen, setTreasuresModalOpen] = useState<boolean>(false);
   const [searchModalOpen, setSearchModalOpen] = useState<boolean>(false);
+  const [loggedOutModalOpen, setLoggedOutModalOpen] = useState<boolean>(false);
   const [balance, refreshBalance] = useBalance();
   const [factions, ledgers, refreshReputations, refreshLedgers] = useFactions();
   const treasures = useTreasures();
@@ -44,7 +47,9 @@ function App() {
       ]);
       updateLastUpdated();
     } catch (e) {
-      console.log(e);
+      if (e instanceof LoggedOutError) {
+        setLoggedOutModalOpen(true);
+      }
     }
     setLoading(false);
   };
@@ -81,8 +86,9 @@ function App() {
           <Faction key={faction.id} faction={faction} ledger={ledgers[faction.id]} />
         ))}
       </main>
-      <TreasuresModal open={treasuresModalOpen} closeClick={() => setTreasuresModalOpen(false)} />
+      <TreasuresModal treasures={treasures} open={treasuresModalOpen} closeClick={() => setTreasuresModalOpen(false)} />
       <SearchModal open={searchModalOpen} onCloseClick={() => setSearchModalOpen(false)} factions={factions} treasures={treasures} />
+      <LoggedOutModal open={loggedOutModalOpen} closeClick={() => setLoggedOutModalOpen(false)} />
     </ConfigProvider>
   )
 }

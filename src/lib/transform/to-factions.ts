@@ -1,27 +1,36 @@
 import type { Campaign } from '../../models/campaign';
-import type { Commendation } from '../../models/commendation';
+import type { Commendation, CommendationScalar } from '../../models/commendation';
 import type { Faction } from '../../models/faction';
 import type { SOTEmblem, SOTReputation, SOTReputationResponse } from '../sot-api/reputation';
 import { getCommendationGrades } from './commendation-grades';
 import factionNames from './faction-names';
 import getMaxLevel from './max-level';
 
+function toScalar(factionId: string, emblem: SOTEmblem): CommendationScalar | undefined {
+  if (!emblem.HasScalar) {
+    return;
+  }
+
+  if (emblem.MaxGrade === 1 && emblem.Threshold === 1) {
+    return;
+  }
+
+  const grades = getCommendationGrades(factionId, emblem.title) ?? (emblem.MaxGrade > 1 ? [emblem.Threshold] : undefined);
+
+  return {
+    value: emblem.Value,
+    maxValue: grades ? grades[grades.length - 1] : emblem.Threshold,
+    grades
+  }
+}
+
 function toCommendation(factionId: string, emblem: SOTEmblem): Commendation {
   const commendation: Commendation = {
     completed: !!emblem.Completed,
     image: emblem.image,
     title: emblem.title,
-    subtitle: emblem.subtitle
-  }
-
-  if (emblem.HasScalar) {
-    const grades = getCommendationGrades(factionId, emblem.title);
-
-    commendation.scalar = {
-      value: emblem.Value,
-      maxValue: grades ? grades[grades.length - 1] : emblem.Threshold,
-      grades
-    }
+    subtitle: emblem.subtitle,
+    scalar: toScalar(factionId, emblem),
   }
 
   return commendation;

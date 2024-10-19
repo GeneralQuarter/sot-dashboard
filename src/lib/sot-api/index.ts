@@ -3,8 +3,18 @@ import { SOTConfigResponse } from './config';
 import type { SOTLedgerResponse } from './ledger';
 import type { SOTReputationResponse } from './reputation';
 
+export class LoggedOutError extends Error {
+  constructor(msg: string = 'Logged out') {
+    super(msg);
+  }
+};
+
 async function apiCall<T>(path: string): Promise<T> {
   const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}${path}`);
+
+  if (res.redirected && res.url.includes('/logout')) {
+    throw new LoggedOutError();
+  }
 
   if (!res.ok) {
     throw new Error(`${res.status}: ${res.statusText}`);

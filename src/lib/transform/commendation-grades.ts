@@ -290,7 +290,18 @@ const commendationGrades: { [factionId: string]: { [commendationTitle: string]: 
     "Sizzling Sinker": [1, 3, 5, 7, 10],
     "Secretive Stash": [1, 5, 10, 15, 20],
     "Feeding the Fire": [1, 3, 5, 7, 10],
-    "Starry Secrets": [1, 5, 10, 15, 20]
+    "Starry Secrets": [1, 5, 10, 15, 20],
+    "Isle Hopper": [1000, 2000, 4000, 6000, 10000],
+    "Rusty Bucket Bay": [1, 3, 10, 20, 35],
+    "They Work for Me Now": [1, 3, 10, 20, 35],
+    "Poisonous Pirate": [1, 25, 50, 100, 150],
+    "Oceans of Venom": [1, 25, 50, 100, 150],
+    "Bang-Bang-A-Boom": [1, 3, 15, 25],
+    "Sneak Thief": [1, 50],
+    "Skeleton Skulduggery": [1, 100],
+    "Hidden in Plain Sight": [50, 100, 150, 250, 450],
+    "Hangin' on the Skelly Bone": [100],
+    "Keep Me Hangin' On": [100]
   },
   "Flameheart": {
     "Hunt Them Down": [5, 10, 25, 50, 100],

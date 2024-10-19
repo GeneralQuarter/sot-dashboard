@@ -34,6 +34,9 @@
 }
 
 .button {
+  --button-background-color: var(--body-background-color);
+  --button-hover-background-color: var(--body-background-color-lighter);
+
   border: none;
   border-radius: var(--spacing-s);
   padding-inline: var(--spacing-l);
@@ -41,21 +44,25 @@
   font-family: inherit;
   font-size: 12px;
   cursor: pointer;
-  background: var(--body-background-color);
+  background: var(--button-background-color);
   display: flex;
   align-items: center;
   gap: var(--spacing-l);
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
 
-  &:hover {
-    background: var(--body-background-color-lighter);
+  &:hover:not(:disabled) {
+    --button-background-color: var(--button-hover-background-color)
   }
 
   &:disabled {
     opacity: 0.8;
+  }
 
-    &:hover {
-      background: var(--body-background-color)
-    }
+  &--secondary {
+    --button-background-color: var(--body-secondary-background-color);
+    --button-hover-background-color: var(--body-secondary-background-color-lighter);
   }
 }
 

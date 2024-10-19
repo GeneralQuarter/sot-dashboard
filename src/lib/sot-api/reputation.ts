@@ -5,6 +5,7 @@ export type SOTEmblem = {
   Threshold: number;
   Value: number;
   HasScalar: boolean;
+  MaxGrade: number;
   image: string;
 }
 
